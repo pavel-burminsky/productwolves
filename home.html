@@ -32,7 +32,7 @@
 						<a href="#">Contact us</a>
 					</li>
 					<li>
-						<a href="#">Subscribe</a>
+						<a href="#" class="open-newsletter">Subscribe</a>
 					</li>
 				</ul>
 				<span class="nav-close"></span>
@@ -41,6 +41,7 @@
 		<div class="front-nav">
 			<div class="container">
 				<div class="by">By Categories</div>
+				<div class="drop-cats">Select</div>
 				<div class="categories">
 					<ul>
 						<li>
@@ -152,7 +153,7 @@
 		<div class="subscribe">
 			<div class="container">
 				<h2>Discover great products, buy them on Amazon.</h2>
-				<span>Subscribe Now</span>
+				<span class="open-newsletter">Subscribe Now</span>
 			</div>
 		</div>
 		<div class="main">
@@ -169,7 +170,7 @@
 							<li><a href="#">Products</a></li>
 							<li><a href="#">About us</a></li>
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Subscribe</a></li>
+							<li><a href="#" class="open-newsletter">Subscribe</a></li>
 						</ul>
 					</div>
 					<div>
@@ -195,6 +196,22 @@
 			</div>
 		</div>
 	</footer>
+	<div class="popup-newsletter">
+		<div class="wrap">
+			<span class="close-popup"></span>
+			<div class="image"></div>
+			<h3>Get the cool stuff delivered to your inbox</h3>
+			<form action="#" method="post">
+				<label for="newsletter-name">Name</label>
+				<input type="text" name="name" id="newsletter-name" placeholder="Enter your name">
+				<label for="newsletter-email">Email adress</label>
+				<input type="email" name="email" id="newsletter-email" placeholder="Enter your email adress">
+				<label for="newsletter-message">Message</label>
+				<textarea name="email" id="newsletter-email" placeholder="Write your message"></textarea>
+				<input type="submit" name="submit" value="Send message">
+			</form>
+		</div>
+	</div>
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="assets/js/theme.js"></script>
 </body>
