@@ -607,7 +607,8 @@ img {
 	margin-bottom: 40px;
 }
 .similar-products:after,
-.blog-head:after {
+.blog-head:after,
+.latest-blogs:after {
 	background-image: url("data:image/svg+xml,%3Csvg width='105' height='10' viewBox='0 0 105 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.46154L104 1L1 9L104 7.15385' stroke='%2319998C' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -692,6 +693,115 @@ img {
 }
 .blog-more:hover {
 	background: #71e8de;
+}
+.single-post {
+	max-width: 730px;
+	margin: 50px auto 80px;
+}
+.single-post h2 {
+	font-size: 30px;
+}
+.single-post h3 {
+	font-size: 28px;
+}
+.single-post h4 {
+	font-size: 26px;
+}
+.single-post h5 {
+	font-size: 24px;
+}
+.single-post h6 {
+	font-size: 20px;
+}
+.single-post img {
+	width: 100%;
+}
+.latest-blogs {
+	position: relative;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	color: #3A4554;
+	padding-bottom: 25px;
+	margin-bottom: 50px;
+}
+.related-posts {
+	margin-bottom: 70px;
+	max-width: 730px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.related-posts > div {
+	margin-bottom: 40px;
+}
+.related-posts a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 14px rgba(58, 69, 84, 0.14);
+	border-radius: 8px;
+	transition: box-shadow .25s ease-out;
+	padding-bottom: 25px;
+}
+.related-posts a:hover {
+	box-shadow: 0px 10px 14px rgba(58, 69, 84, 0.4);
+}
+.related-posts .image {
+	padding-top: 67%;
+	border-radius: 8px 8px 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 20px;
+}
+.related-posts h3 {
+	font-weight: bold;
+	font-size: 20px;
+	color: #3A4554;
+	padding: 0 18px;
+}
+.related-posts p {
+	font-size: 14px;
+	color: #797979;
+	padding: 0 18px;
+	margin-bottom: 20px;
+}
+.related-posts .meta {
+	padding: 0 130px 0 18px;
+	font-size: 12px;
+	color: #797979;
+	position: relative;
+}
+.related-posts .meta span {
+	color: #19998C;
+	position: absolute;
+	right: 25px;
+}
+.single-head {
+	max-width: 730px;
+	margin: 25px auto;
+	font-size: 14px;
+	color: #3A4554;
+}
+.single-head h1 {
+	margin-bottom: 10px;
+	font-weight: 800;
+	font-size: 30px;
+	color: #3A4554;
+}
+.single-head .user-icon {
+	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M7.99951 0C3.58351 0 -0.000488281 3.584 -0.000488281 8C-0.000488281 12.416 3.58351 16 7.99951 16C12.4155 16 15.9995 12.416 15.9995 8C15.9995 3.584 12.4155 0 7.99951 0ZM7.99951 2.4C9.32751 2.4 10.3995 3.472 10.3995 4.8C10.3995 6.128 9.32751 7.2 7.99951 7.2C6.67151 7.2 5.59951 6.128 5.59951 4.8C5.59951 3.472 6.67151 2.4 7.99951 2.4ZM7.99951 13.76C5.99951 13.76 4.23151 12.736 3.19951 11.184C3.22351 9.592 6.39951 8.72 7.99951 8.72C9.59151 8.72 12.7755 9.592 12.7995 11.184C11.7675 12.736 9.99951 13.76 7.99951 13.76Z' fill='%233A4554'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='16' height='16' fill='white' transform='translate(-0.000488281)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	margin-left: 0;
+}
+.single-head .calendar-icon {
+	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3328 1.48571H12.5709V0H11.0471V1.48571H4.95186V0H3.42805V1.48571H2.66614C1.82043 1.48571 1.14995 2.15429 1.14995 2.97143L1.14233 13.3714C1.14233 14.1886 1.82043 14.8571 2.66614 14.8571H13.3328C14.1709 14.8571 14.8566 14.1886 14.8566 13.3714V2.97143C14.8566 2.15429 14.1709 1.48571 13.3328 1.48571ZM13.3328 13.3714H2.66614V5.2H13.3328V13.3714ZM4.18995 6.68571H7.99948V10.4H4.18995V6.68571Z' fill='%233A4554'/%3E%3C/svg%3E%0A");
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
 }
 @media (min-width: 576px) {
 	.container {
@@ -815,6 +925,19 @@ img {
 		flex: 0 0 calc(100% - 330px);
 		max-width: calc(100% - 330px);
 		padding-left: 40px;
+	}
+	.related-posts {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.related-posts > div {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.single-head {
+		margin: 50px auto;
 	}
 }
 @media (min-width: 1200px) {
