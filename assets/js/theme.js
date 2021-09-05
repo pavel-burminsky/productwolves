@@ -1,0 +1,10 @@
+(function($){
+	$(document).ready(function(){
+		$('.hamburger').click(function(){
+			$('.main-nav').addClass('show');
+		});
+		$('.nav-close').click(function(){
+			$('.main-nav').removeClass('show');
+		});
+	});
+})(jQuery);
