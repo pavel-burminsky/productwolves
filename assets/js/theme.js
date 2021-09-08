@@ -9,7 +9,7 @@
 		$('.drop-cats').click(function(){
 			$('.drop-cats, .front-nav .categories').toggleClass('show');
 		});
-		$('.open-newsletter').click(function(e){
+		$('.contact-link, .contact-link a').click(function(e){
 			e.preventDefault();
 			$('.popup-newsletter').fadeIn(300);
 		});

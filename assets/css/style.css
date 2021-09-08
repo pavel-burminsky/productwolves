@@ -311,7 +311,7 @@ img {
 	line-height: 46px;
 	color: #FFFFFF;
 }
-.footer .subscribe span {
+.footer .subscribe a {
 	background: #FFFFFF;
 	box-shadow: 0px 8px 16px rgba(150, 163, 181, 0.18);
 	border-radius: 6px;
@@ -324,8 +324,9 @@ img {
 	cursor: pointer;
 	display: inline-block;
 	transition: background .25s ease-out;
+	text-decoration: none;
 }
-.footer .subscribe span:hover {
+.footer .subscribe a:hover {
 	background: #ceefeb;
 }
 .footer .main {
@@ -561,29 +562,29 @@ img {
 	background-position: center;
 	margin: 0 12px;
 }
-.single-product {
+.product-single {
 	margin-top: 50px;
 	margin-bottom: 100px;
 	display: flex;
 	flex-wrap: wrap;
 }
-.single-product .image,
-.single-product .description {
+.product-single .image,
+.product-single .description {
 	flex: 0 0 100%;
 	max-width: 100%;
 }
-.single-product .image {
+.product-single .image {
 	text-align: center;
 }
-.single-product .image img {
+.product-single .image img {
 	max-width: 385px;
 	height: auto;
 	width: 100%;
 }
-.single-product .description {
+.product-single .description {
 	padding-top: 40px;
 }
-.single-product .description .text {
+.product-single .description .text {
 	margin-bottom: 25px;
 }
 .buy-now {
@@ -702,26 +703,26 @@ img {
 .blog-more:hover {
 	background: #71e8de;
 }
-.single-post {
+.post-single {
 	max-width: 730px;
 	margin: 50px auto 80px;
 }
-.single-post h2 {
+.post-single h2 {
 	font-size: 30px;
 }
-.single-post h3 {
+.post-single h3 {
 	font-size: 28px;
 }
-.single-post h4 {
+.post-single h4 {
 	font-size: 26px;
 }
-.single-post h5 {
+.post-single h5 {
 	font-size: 24px;
 }
-.single-post h6 {
+.post-single h6 {
 	font-size: 20px;
 }
-.single-post img {
+.post-single img {
 	width: 100%;
 }
 .latest-blogs {
@@ -848,13 +849,13 @@ img {
 .btn:hover {
 	background: #00b3a1;
 }
-.page-template-newsletter .breadcrumbs {
+.page-template-template-subscribe .breadcrumbs {
 	padding-bottom: 0;
 }
-.page-template-newsletter .footer {
+.page-template-template-subscribe .footer {
 	background-image: none;
 }
-.page-template-newsletter .footer .subscribe {
+.page-template-template-subscribe .footer .subscribe {
 	display: none;
 }
 .newsletter-head {
@@ -924,6 +925,7 @@ img {
 	border-radius: 8px;
 	padding: 35px 20px 30px;
 	text-align: center;
+	height: 100%;
 }
 .why-col img {
 	height: 86px;
@@ -1055,12 +1057,12 @@ img {
 		flex: 0 0 32%;
 		max-width: 32%;
 	}
-	.single-product .image,
-	.single-product .description {
+	.product-single .image,
+	.product-single .description {
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
-	.single-product .image {
+	.product-single .image {
 		text-align: left;
 	}
 	.buy-now {
