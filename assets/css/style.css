@@ -70,21 +70,22 @@ img {
 	cursor: pointer;
 }
 .nav-close {
-	background-image: url("data:image/svg+xml,%3Csvg width='22' height='35' viewBox='0 0 22 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z' fill='%23DEDEDE'/%3E%3Cpath d='M8.04213 14.8102C7.82389 14.8102 7.60569 14.7267 7.43944 14.5604C7.10612 14.2271 7.10612 13.6883 7.43944 13.355L13.4663 7.32811C13.7997 6.9948 14.3384 6.9948 14.6717 7.32811C15.005 7.66143 15.005 8.20018 14.6717 8.5335L8.64482 14.5604C8.47771 14.7267 8.26033 14.8102 8.04213 14.8102Z' fill='%23201E1C'/%3E%3Cpath d='M14.0666 14.8102C13.8484 14.8102 13.6302 14.7267 13.4639 14.5604L7.437 8.5335C7.10368 8.20018 7.10368 7.66143 7.437 7.32811C7.77031 6.9948 8.30907 6.9948 8.64238 7.32811L14.6693 13.355C15.0026 13.6883 15.0026 14.2271 14.6693 14.5604C14.5031 14.7267 14.2848 14.8102 14.0666 14.8102Z' fill='%23201E1C'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='22' height='35' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	/*background-image: url("data:image/svg+xml,%3Csvg width='22' height='35' viewBox='0 0 22 35' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M11 22C17.0751 22 22 17.0751 22 11C22 4.92487 17.0751 0 11 0C4.92487 0 0 4.92487 0 11C0 17.0751 4.92487 22 11 22Z' fill='%23DEDEDE'/%3E%3Cpath d='M8.04213 14.8102C7.82389 14.8102 7.60569 14.7267 7.43944 14.5604C7.10612 14.2271 7.10612 13.6883 7.43944 13.355L13.4663 7.32811C13.7997 6.9948 14.3384 6.9948 14.6717 7.32811C15.005 7.66143 15.005 8.20018 14.6717 8.5335L8.64482 14.5604C8.47771 14.7267 8.26033 14.8102 8.04213 14.8102Z' fill='%23201E1C'/%3E%3Cpath d='M14.0666 14.8102C13.8484 14.8102 13.6302 14.7267 13.4639 14.5604L7.437 8.5335C7.10368 8.20018 7.10368 7.66143 7.437 7.32811C7.77031 6.9948 8.30907 6.9948 8.64238 7.32811L14.6693 13.355C15.0026 13.6883 15.0026 14.2271 14.6693 14.5604C14.5031 14.7267 14.2848 14.8102 14.0666 14.8102Z' fill='%23201E1C'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='22' height='35' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");*/
+	background-image: url("data:image/svg+xml,%3Csvg width='18' height='27' viewBox='0 0 18 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M10.6491 9.01558L17.6579 2.00652C18.1141 1.55061 18.1141 0.813468 17.6579 0.357558C17.202 -0.0983525 16.4649 -0.0983525 16.009 0.357558L8.9999 7.36662L1.99106 0.357558C1.53493 -0.0983525 0.798003 -0.0983525 0.342093 0.357558C-0.114031 0.813468 -0.114031 1.55061 0.342093 2.00652L7.35094 9.01558L0.342093 16.0246C-0.114031 16.4805 -0.114031 17.2177 0.342093 17.6736C0.569301 17.901 0.868045 18.0153 1.16658 18.0153C1.46511 18.0153 1.76364 17.901 1.99106 17.6736L8.9999 10.6645L16.009 17.6736C16.2364 17.901 16.5349 18.0153 16.8334 18.0153C17.132 18.0153 17.4305 17.901 17.6579 17.6736C18.1141 17.2177 18.1141 16.4805 17.6579 16.0246L10.6491 9.01558Z' fill='%233A4554'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='18' height='27' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
-	background-size: 30px;
+	background-size: 22px;
 	background-position: center 10px;
 	cursor: pointer;
 	display: block;
 	width: 40px;
 	height: 40px;
 	position: absolute;
-	right: 15px;
-	top: 15px;
+	left: 10px;
+	top: 20px;
 }
 .main-nav {
 	display: none;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 .main-nav.show {
 	display: block;
@@ -96,34 +97,39 @@ img {
 	background: #fff;
 	z-index: 999;
 }
+.main-nav.show:before {
+	display: block;
+	content: '';
+	background: #FFFFFF;
+	box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.102);
+	height: 81px;
+	background-image: url('../img/logo.svg');
+	background-repeat: no-repeat;
+	background-position: center 10px;
+	background-size: 110px auto;
+}
 .main-nav ul {
 	list-style: none;
-	display: inline-block;
+	display: block;
 	margin: 0;
 	padding: 0;
 }
 .main-nav li {
 	display: block;
+	text-align: left;
+	border-bottom: 1px solid #F3F3F3;
 }
 .main-nav a {
 	display: inline-block;
 	padding: 15px 25px;
-	font-size: 14px;
 	color: #3A4554;
 	text-decoration: none;
 	transition: color .25s ease-out;
+	font-weight: 500;
+	font-size: 16px;
 }
 .main-nav a:hover {
 	color: #19998C;
-}
-.main-nav ul > :last-child a {
-	background: #19998C;
-	color: #fff;
-	padding: 30px 40px;
-	transition: background .25s ease-out;
-}
-.main-nav ul > :last-child a:hover {
-	background: #00b3a1;
 }
 .front-nav {
 	border-top: 1px solid #EBEBEB;
@@ -979,6 +985,15 @@ img {
 	.main-nav a {
 		padding: 30px 25px;
 	}
+	.main-nav ul > :last-child a {
+		background: #19998C;
+		color: #fff;
+		padding: 30px 40px;
+		transition: background .25s ease-out;
+	}
+	.main-nav ul > :last-child a:hover {
+		background: #00b3a1;
+	}
 	.nav-close {
 		display: none;
 	}
@@ -990,6 +1005,9 @@ img {
 		top: unset;
 		background: transparent;
 		z-index: unset;
+	}
+	.main-nav.show:before {
+		display: none;
 	}
 	.drop-cats {
 		display: none;
