@@ -7,7 +7,7 @@ function pw_enqueue() {
 
 	wp_enqueue_script( 'theme-jquery', get_template_directory_uri() . '/assets/js/jquery-3.6.0.min.js', array(), '3.6.0', true );
 	wp_enqueue_script( 'theme', get_template_directory_uri() . '/assets/js/theme.js', array( 'theme-jquery' ), '1.0.0', true );
-	wp_localize_script( 'theme', 'ada_ajax_object',
+	wp_localize_script( 'theme', 'pw_ajax_object',
 		array( 
 			'ajaxurl' => admin_url( 'admin-ajax.php' )
 		)
@@ -214,7 +214,7 @@ function pw_term_products( $term ) {
 			),
 		),
 	) );
-	echo '<div class="row">';
+	echo '<div class="row products-grid">';
 	foreach( $posts->posts as $post ) {
 		?>
 		<div>
@@ -228,6 +228,76 @@ function pw_term_products( $term ) {
 	}
 	echo '</div>';
 }
+
+function pw_load_more() {
+
+	$args = array();
+	$args['post_type'] = $_POST['post_type'];
+	$args['posts_per_page'] = $_POST['posts_per_page'];
+	$args['offset'] = $_POST['offset'];
+	if( $_POST['btn'] == 'product' ) {
+		$args['tax_query'] = array(
+			array(
+				'taxonomy' => 'product-category',
+				'field'    => 'term_id',
+				'terms'    => $_POST['category'],
+			),
+		);
+	}
+
+	$query = new WP_Query( $args );
+	$posts = $query->posts;
+
+	echo $_POST['btn'] == 'blog' ? pw_more_blogs( $posts ) : pw_more_products( $posts );
+
+	wp_die();
+}
+add_action( 'wp_ajax_load_more', 'pw_load_more' );
+add_action( 'wp_ajax_nopriv_load_more', 'pw_load_more' );
+
+
+function pw_more_products( $posts ) {
+	ob_start();
+	foreach( $posts as $post ) {
+		?>
+		<div class="ajax-loaded">
+			<a href="<?php echo get_permalink( $post ); ?>">
+				<div class="image" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post, 'product' ); ?>');"></div>
+				<h3><?php echo get_the_title( $post ); ?></h3>
+				<span><?php _e( 'Learn more', 'pw' ); ?></span>
+			</a>
+		</div>
+		<?php
+	}
+	return ob_get_clean();
+}
+
+
+function pw_more_blogs( $posts ) {
+	ob_start();
+	foreach( $posts as $post ) {
+		?>
+		<article class="ajax-loaded">
+			<div class="image">
+				<a href="<?php echo get_permalink( $post ); ?>" style="background-image: url('<?php echo get_the_post_thumbnail_url( $post, 'blog' ); ?>');"></a>
+			</div>
+			<div class="meta">
+				<h2>
+					<a href="<?php echo get_permalink( $post ); ?>"><?php echo get_the_title( $post ); ?></a>
+				</h2>
+				<span class="user-icon"></span> <?php _e( 'Post by', 'pw' ); ?>: <?php the_author_meta( 'user_nicename' , $post->post_author ); ?> <span class="calendar-icon"></span> <?php echo get_the_date( 'j M Y', $post ); ?>
+				<p><?php echo pw_excerpt( get_the_content( '', '', $post ), 30, '...' ); ?></p>
+				<a href="<?php echo get_permalink( $post ); ?>" class="blog-more"><?php _e( 'Read more', 'pw' ); ?></a>
+			</div>
+		</article>
+		<?php
+	}
+	return ob_get_clean();
+}
+
+
+
+
 
 
 

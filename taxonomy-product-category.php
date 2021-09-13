@@ -10,7 +10,7 @@ $term = get_queried_object(); ?>
 			pw_term_products( $term );
 		} ?>
 		<div class="load-products">
-			<div><?php _e( 'Load more', 'pw' ); ?></div>
+			<div class="load-more-btn" data-btn="product" data-category="<?php echo $term->term_id; ?>"><?php _e( 'Load more', 'pw' ); ?></div>
 		</div>
 	</div>
 <?php get_footer(); ?>

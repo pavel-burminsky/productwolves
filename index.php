@@ -26,7 +26,7 @@
 			<?php endwhile; endif; wp_reset_query(); ?>
 		</div>
 		<div class="load-blogs">
-			<div><?php _e( 'Load more', 'pw' ); ?></div>
+			<div class="load-more-btn" data-btn="blog"><?php _e( 'Load more', 'pw' ); ?></div>
 		</div>
 	</div>
 <?php get_footer(); ?>
